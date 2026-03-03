@@ -1,0 +1,18 @@
+set_power:
+  description: "Turn screen on or off"
+  fields:
+    player_id:
+      description: "NovaCloud Player ID"
+      example: "4PBXun3mQzGnKdLKoDtBA=="
+      required: true
+      selector:
+        text:
+    power_on:
+      description: "Turn on (true) or off (false)"
+      example: true
+      required: true
+      selector:
+        boolean:
+
+discover_players:
+  description: "Fetch player list from NovaCloud and register as Home Assistant devices"
